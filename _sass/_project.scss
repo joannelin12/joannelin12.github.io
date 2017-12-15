@@ -1,0 +1,27 @@
+// =============================================================================
+// Project
+// =============================================================================
+
+.section {
+  margin-bottom: 100px;
+
+  .section-tag {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: $base-accent-color;
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .caption {
+    font-size: 12px;
+    color: $gray;
+  }
+
+  .spacer {
+    height: 50px;
+  }
+}

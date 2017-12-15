@@ -1,0 +1,25 @@
+// =============================================================================
+// Footer
+// =============================================================================
+
+.footer {
+  display: block;
+  padding-top: 35px;
+  margin-bottom: 85px;
+  border-top: 1px solid $base-border-color;
+  font-size: 12px;
+  color: $gray-light;
+
+  a {
+    font-size: 12px;
+    color: $gray-dark;
+    text-decoration: none;
+  }
+
+  .footer-left {
+    float: left;
+  }
+  .footer-right {
+    float: right;
+  } 
+}
