@@ -4,7 +4,7 @@
 
 .article {
   display: block;
-  margin: 40px 0 100px;
+  margin: 40px 0 40px;
 }
 
 .article-list {
@@ -71,6 +71,7 @@
     border-bottom: 1px solid transparent;
     font-weight: 600;
     letter-spacing: .5px;
+    line-height: 18px;
     svg {
       width: 16px;
       height: 16px;
@@ -96,12 +97,8 @@
   .small {
     font-size: 10px;
     color: $gray;
-    padding: 6px 0;
-    line-height: 12px;
-    display: inline-block;
-    font-weight: 700;
-    margin-bottom: 14px;
     letter-spacing: 1px;
+    margin-bottom: 14px;
   }
 }
 
