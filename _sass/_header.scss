@@ -5,17 +5,26 @@
 .header-nav {
   display: block;
   padding: 50px 0 10px;
+  //border-bottom: 1px solid $base-border-color;
+}
+
+.nav-border {
   border-bottom: 1px solid $base-border-color;
 }
 
 .header-logo {
   display: inline-block;
   font-family: $serif;
-  font-size: 44px;
+  font-size: 48px;
   font-weight: 700;
   color: $header-logo-color;
   text-decoration: none;
   letter-spacing: -0.75px;
+  box-shadow: inset 10px 22px #fff;
+  background-color: $base-accent-color;
+  padding-right: 10px;
+  line-height: 48px;
+  border-color: #fff;
 
   &:hover {
     color: $header-logo-color;
@@ -26,7 +35,7 @@
 .header-links {
   float: right;
   padding: 0;
-  margin: 24px 0 0;
+  margin: 14px 0 0;
   list-style: none;
   li {
     display: inline-block;

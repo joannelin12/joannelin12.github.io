@@ -93,17 +93,21 @@ h6 {
 }
 
 a {
-  color: $base-accent-color;
+  color: $base-font-color;
   text-decoration: none;
-  //transition: color $base-transition-speed linear;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid $base-font-color;
   padding-bottom: 1px;
+  background-image: linear-gradient(to right, rgba(254,255,137,0) 50%, #FEFF89 50%);
+  background-size: 200% auto;
+  background-position: -0% 0;
+  transition: background-position 0.15s ease-out;
+      font-weight: 600;
   &:hover,
   &:active {
-    border-color: $base-accent-color;
+    border-color: #fff;
+    background-position: -99.99% 0;
   }
   &:focus {
-    color: $base-font-color;
     outline: none;
   }
 }

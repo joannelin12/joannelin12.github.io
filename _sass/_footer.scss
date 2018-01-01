@@ -12,8 +12,9 @@
 
   a {
     font-size: 12px;
-    color: $gray-dark;
+    color: $gray;
     text-decoration: none;
+    border: 0px;
   }
 
   .footer-left {
@@ -21,5 +22,10 @@
   }
   .footer-right {
     float: right;
-  } 
+  }
+
+  @include breakpoint(small) {
+    padding: 35px 10px;
+    margin-bottom: 20px;
+  }
 }
