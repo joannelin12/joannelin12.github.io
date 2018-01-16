@@ -1,0 +1,137 @@
+---
+layout: isolated
+title: Salesforce Design Challenge
+permalink: /salesforce/
+---
+
+<article class="article">
+  <header class="article-header">
+    <h1>{{ page.title }}</h1>
+    <p>Doughnut Shop</p>
+    <!--<img src="/images/everlane/header-image.jpg" class="header-image">-->
+  </header>
+
+  <div class="article-content">
+
+    <!-- Overview -->
+    <div class="section">
+      <span class="section-tag">Overview</span>
+      <h2>A website for doughnut orders and an application to help a doughnut shop manage their inventory.</h2>
+      <p>
+        Doughnut Shop has 10 locations across the US. They want to create an app that allows customers to order doughnuts anywhere and at anytime. They also need a solution for managing the orders and their inventory.
+      </p>
+      <p>
+        I designed a simple responsive website so customers can order doughnuts from their desktop and phones anytime. In addition to that, I created an app for the business to analyze their order data alongside their doughnut inventory. It allows them to see which doughnuts are selling fast, so they can adjust their doughnut stock accordingly.
+      </p>
+    </div>
+
+    <!--<div class="section">
+      <h2>Jump to section:</h2>
+      <p><a href="#consumer">The Consumer-Facing Website</a></p>
+      <p><a href="#business">The Business Application</a></p>
+    </div>-->
+
+    <div class="section">
+      <span class="section-tag">Problem</span>
+      <h2>Doughnuts ordered vs. Doughnuts made</h2>
+      <p>
+        Currently, the shop doesn’t know how many of each doughnut to make, so they end up with too many of one type and not enough of the other. They are also mismanaging the amount of ingredients they have in stock as well.
+      </p>
+      <h3>Defining the project goals:</h3>
+      <ul>
+        <li>Let my customers order quickly, anytime and anywhere.</li>
+        <li>Help me predict how many doughnuts to make, throughout the day.</li>
+      </ul>
+    </div>
+
+
+    <!-- Customer -->
+    <div class="section" id="consumer">
+      <span class="section-tag">Design</span>
+      <h2>The Consumer-Facing Website</h2>
+
+      <h3>Consumer - User Flow</h3>
+      <p>
+        My first step was to map out the customer journey of ordering doughnuts online. Laying out the entire customer flow helped me see opportunities to improve the experience, like detecting a customer’s location or showing availability based on time and store.
+      </p>
+      <img src="/images/doughnut/map1.jpg">
+      <p class="caption">The customer's journey.</p>
+
+      <div class="spacer"></div>
+
+      <h3>Consumer - Sketches</h3>
+      <p>
+        Using learnings from flow mapping, I sketched out concepts for the four major steps in the customer journey: the landing page, the catalog (choosing doughnuts), cart/checkout (paying), order confirmation.
+      </p>
+      <img src="/images/doughnut/customer-sketches.jpg">
+      <p class="caption">Quick concept sketches.</p>
+
+      <div class="spacer"></div>
+
+      <h3>Consumer - Wireframes</h3>
+      <p>
+        During the wireframe phase, I was able to flush out some of the functionality that the high-level brainstorming didn't capture. To be able to show correct availablity to the customer, the app needed to ask for pick up / delivery info early on. One of my first attempts was a on-boarding type quiz.
+      </p>
+      <img src="/images/doughnut/quiz-flow.jpg">
+      <p class="caption">First customer flow with long quiz. <a target="new" href="/images/doughnut/quiz-flow.jpg">View larger</a></p>
+      <p>
+        Through a quick invision mockup, I found that the quiz process was too long, so I worked on different ways to condense it.
+      </p>
+      <img src="/images/doughnut/final-customer-flow.jpg">
+      <p class="caption">Condensed customer flow. <a target="new" href="/images/doughnut/final-customer-flow.jpg">View larger</a></p>
+
+      <img src="/images/doughnut/customer-desktop.jpg">
+      <p class="caption">Desktop version of the doughnut catalog. <a target="new" href="/images/doughnut/customer-desktop.jpg">View larger</a></p>
+
+    </div>
+
+
+    <!-- Business -->
+    <div class="section" id="business">
+      <span class="section-tag">Design</span>
+      <h2>The Business Application</h2>
+
+      <h3>Business - Brainstorming</h3>
+      <p>
+        The first step was to organize the information in a way that answers the question: How many doughnuts should I make? I sketched out different ways to represent orders and inventory data—information that will help answer the question. I then compared the concepts to see which solution solved the problem without over-complicating it.
+      </p>
+      <img src="/images/doughnut/info-graphs.jpg">
+      <p class="caption">Sketches to organize the information.</p>
+
+      <p>
+        After I had an idea of how the information could be displayed, I started to sketch out ideas for the application. There are 4 major views I thought was important for the business: an “Overview”, “Live Orders” (present), “Completed Orders” (past), and “Look ahead” (future). This helps the owner manage the stores by giving a wholistic view of each business. The owner can keep track of how many doughnuts to make today, compare the volume of orders for the past week, and predict how many doughnuts to make tomorrow.
+      </p>
+      <img src="/images/doughnut/business-brainstorm.jpg">
+      <p class="caption">Quick concept sketches.</p>
+
+      <div class="spacer"></div>
+
+      <h3>Business - Wireframes</h3>
+      <p>
+        To keep this design exercise simple, I assumed that the input of order and inventory data would be done in another app, so I could focus this one on analyzing the data instead--which would help answer the question of how many doughnuts should be made.
+      </p>
+
+      <p>
+        The overview of each store allows the owner to see what's going on at a high level. They can roughly see which doughnuts are selling faster than what that store has in stock.
+      </p>
+      <img src="/images/doughnut/overview.jpg">
+      <p class="caption">Overview of one store. <a target="new" href="/images/doughnut/overview.jpg">View larger</a></p>
+
+      <p>
+        The "Live Orders" view allows the owner to see the breakdown of each flavor, so they can better understand how many doughnuts to make. They can see how many are being ordered for pick-up/delivery for each hour, so they can predict how quickly it might go out of stock. With that information, they will be able to prioritize the doughnut batches to be made.
+      </p>
+
+      <img src="/images/doughnut/live-orders.jpg">
+      <p class="caption">Live orders of one store. <a target="new" href="/images/doughnut/live-orders.jpg">View larger</a></p>
+
+      <div class="spacer"></div>
+
+      <h3>Business - Final Design</h3>
+      <img src="/images/doughnut/final.jpg">
+      <p class="caption">Full fidelity mockup. <a target="new" href="/images/doughnut/live-orders.jpg">View larger</a></p>
+
+    </div>
+
+    
+  </div>
+</article>
